@@ -1,0 +1,17 @@
+import sys
+
+n = int(input())
+nums = set()
+for i in range(2 * n + 1):
+    if i % 2 == 0:
+        for j in range(1, 2 * n + 2):
+            if j not in nums:
+                nums.add(j)
+                print(j)
+                sys.stdout.flush()
+                break
+    else:
+        nums.add(int(input()))
+
+print(0)
+sys.stdout.flush()
