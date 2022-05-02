@@ -9,4 +9,4 @@ for i in range(m, -1, -1):
     for j in range(n + 1):
         c[i + j] -= a[j] * b[i]
 
-print(*b)
+print(*b)   
