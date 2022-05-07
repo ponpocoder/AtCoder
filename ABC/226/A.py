@@ -1,3 +1,3 @@
 x = float(input())
 
-print(round(x))
+print(round(x+0.0005))
