@@ -1,3 +1,5 @@
+#現時点では解けない wm, binary trieなどが必要   
+
 import heapq
 q = int(input())
 queries = []
@@ -15,26 +17,25 @@ for query in queries:
     elif query[0] == 2:
         copy = maxHeap.copy()
         x, k = query[1], query[2]
-        if k > len(copy):
+        while copy and copy[-1] > x:
+            heapq.heappop(minHeap)
+        if len(copy) < k:
             print(-1)
         else:
             for _ in range(k - 1):
-                heapq.heappop(copy)
-            value = heapq.heappop(copy)
-            if value < x:
-                print(-1)
-            else:
-                print(value)
+                heapq.heappop(minHeap)
+            value = heapq.heappop(minHeap)
+            print(value)
     else:
         copy = minHeap.copy()
         x, k = query[1], query[2]
-        if k > len(copy):
+        x, k = query[1], query[2]
+        while copy and copy[-1] < x:
+            heapq.heappop(minHeap)
+        if len(copy) < k:
             print(-1)
         else:
             for _ in range(k - 1):
-                heapq.heappop(copy)
-            value = heapq.heappop(copy)
-            if value > x:
-                print(-1)
-            else:
-                print(value)
+                heapq.heappop(minHeap)
+            value = heapq.heappop(minHeap)
+            print(value)
