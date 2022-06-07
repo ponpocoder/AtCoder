@@ -1,0 +1,21 @@
+n, c, k = map(int, input().split())
+currP = 0
+currT = 0
+limit = float("inf")
+res = 0
+t = [int(input()) for _ in range(n)]
+t.sort()
+for i in range(n):
+    currT = t[i]
+    if currP == c or limit < currT:
+        currP = 0
+        res += 1
+        limit = float("inf")
+    
+    currP += 1
+    if limit == float("inf"):
+        limit = currT + k
+
+if currP:
+    res += 1
+print(res)        
