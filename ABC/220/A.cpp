@@ -1,3 +1,4 @@
+#define LOCAL
 #include <iostream>
 
 using namespace std;
