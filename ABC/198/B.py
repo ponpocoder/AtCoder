@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input())n
 
 while n % 10 == 0 and n:
     n //= 10
