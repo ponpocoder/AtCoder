@@ -19,12 +19,12 @@ for i in range(n):
     l = len(score)
     cs = 0
     for j in range(l):
-        if j > k:
+        if j + 1 > k:
             break
         cs += score[j]
         curr = cs
         if total > 0:
-            curr += total * (k-(j+1)) // l
+            curr += total * ((k-(j+1)) // l)
         res = max(res, curr)
 
 print(res)
