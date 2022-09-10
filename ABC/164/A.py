@@ -1,3 +1,3 @@
 s, w = map(int, input().split())
 
-print("unsafe" if w > s else "safe")
+print("unsafe" if w >= s else "safe")

@@ -37,7 +37,7 @@ while q:
         q.append((r, c+1))
         q.append((r, c-1))
         if curr != "S" and curr != "." and curr not in used:
-            used.add(c)
+            used.add(curr)
             for nr, nc in dic[curr]:
                 if nr == r and nc == c or visited[nr][nc]:
                     continue
