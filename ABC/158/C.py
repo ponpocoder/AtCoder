@@ -6,3 +6,5 @@ for i in range(1, 10000):
     if x == a and y == b:
         print(i)
         exit()
+
+print(-1)
