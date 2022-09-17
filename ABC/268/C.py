@@ -9,6 +9,6 @@ for i, v in enumerate(p):
 
 res = 0
 # print(cnt)
-for i in range(n-1):
-    res = max(res, cnt[i-1]+cnt[i]+cnt[i+1])
+for i in range(n):
+    res = max(res, cnt[i-1]+cnt[i]+cnt[(i+1) % n])
 print(res)
