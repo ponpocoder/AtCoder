@@ -7,26 +7,26 @@ def check(x):
         c = s[i % n]
         if x[i % n] == 0:
             if c == "o":
-                if x[(i+1) % n] == None:
+                if x[(i+1) % n] is None:
                     x[(i+1) % n] = x[i-1]
                 else:
                     if x[(i+1) % n] != x[i-1]:
                         return []
             else:
-                if x[(i+1) % n] == None:
+                if x[(i+1) % n] is None:
                     x[(i+1) % n] = x[i-1] ^ 1
                 else:
                     if x[(i+1) % n] == x[i-1]:
                         return []
         else:
             if c == "o":
-                if x[(i+1) % n] == None:
+                if x[(i+1) % n] is None:
                     x[(i+1) % n] = x[i-1] ^ 1
                 else:
                     if x[(i+1) % n] == x[i-1]:
                         return []
             else:
-                if x[(i+1) % n] == None:
+                if x[(i+1) % n] is None:
                     x[(i+1) % n] = x[i-1]
                 else:
                     if x[(i+1) % n] != x[i-1]:

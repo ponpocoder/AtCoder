@@ -1,15 +1,14 @@
 n, b, k = map(int, input().split())
 c = list(map(int, input().split()))
-mod = 10 **9 + 7
-res = 0
-def dfs(i, curr):
-    if i == k:
-        if curr % b == 0:
-            res += 1
-        return
+mod = 10 ** 9 + 7
 
-    dfs(i + 1, curr)
-    dfs(i + 1, curr + c[i])
+dp = [[0] * (b+1) for _ in range(n+1)]
+dp[0][0] = 1
 
-dfs(0, 0)
-print(res % mod)
+for i in range(1, n+1):
+    for j in range(b+1):
+        for l in range(k):
+            dp[i][j] += dp[i-1][(10*j+c[l]) % b]
+            dp[i][j] %= mod
+
+print(dp[n][0])
