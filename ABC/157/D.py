@@ -40,7 +40,7 @@ for _ in range(k):
     c, d = map(int, input().split())
     c -= 1
     d -= 1
-    if find(c) == find(d):
+    if find(c) == find(d):  # 同じグループ内のブロック関係でなければ無視できる
         graph[c].add(d)
         graph[d].add(c)
 

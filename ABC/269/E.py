@@ -8,16 +8,16 @@ for i in range(2):
         if i == 0:
             print("?", 1, m, 1, n)
         else:
-            print("?", m, 1, n, 1)
+            print("?", 1, n, 1, m)
         x = int(input())
         if x != m:
             r = m
         else:
             l = m
-    if t == 0:
+    if i == 0:
         row = r
     else:
         column = r
 
 
-print("!", r, c)
+print("!", row, column)
