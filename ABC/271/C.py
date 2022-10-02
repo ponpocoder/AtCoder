@@ -5,7 +5,7 @@ s = set(a)
 cnt = 0
 while n >= 0:
     cnt += 1
-    if cnt in a:
+    if cnt in s:
         n -= 1
     else:
         n -= 2
