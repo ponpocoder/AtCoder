@@ -6,7 +6,6 @@ while curr * 2 < n:
 
 res = ""
 while n != 0:
-    print(n)
     if n % 2:
         n -= 1
         res = "1" + res
