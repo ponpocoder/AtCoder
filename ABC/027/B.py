@@ -13,6 +13,7 @@ for i in range(n-1):
     curr += a[i]
     if curr % j == 0 and curr // j == x:
         curr = 0
+        j = 1
         continue
     cnt += 1
     j += 1

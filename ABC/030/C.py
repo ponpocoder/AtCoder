@@ -37,7 +37,7 @@ while True:
         break
     t = a[x] + X
     y = binarySearch2(t)
-    if y == n:
+    if y == m:
         break
     t = b[y] + Y
     cnt += 1
