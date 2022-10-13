@@ -1,6 +1,3 @@
-import sys
-sys.setrecursionlimit(10**7)
-
 n = int(input())
 mod = 10007
 one, two, thr = 0, 0, 1
