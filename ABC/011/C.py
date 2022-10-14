@@ -10,7 +10,7 @@ for _ in range(3):
 
 def dfs(curr):
     if curr in x:
-        return INF
+        return 101
     if curr < 0:
         return False
     if dp[curr] != INF:
