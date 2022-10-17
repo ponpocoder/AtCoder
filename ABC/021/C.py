@@ -4,6 +4,7 @@ n = int(input())
 a, b = map(int, input().split())
 a -= 1
 b -= 1
+mod = 10**9 + 7
 
 graph = [[] for _ in range(n)]
 m = int(input())
@@ -27,6 +28,7 @@ while q:
             continue
         visiting.add(curr)
         cnt[curr] += cd
+        cnt[curr] %= mod
 
     for curr in visiting:
         visited.add(curr)
