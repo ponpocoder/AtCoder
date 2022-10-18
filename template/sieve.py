@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 class sieve:
     def __init__(self, n):
         self.n = n + 1
