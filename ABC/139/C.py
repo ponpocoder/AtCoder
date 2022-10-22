@@ -1,0 +1,13 @@
+n = int(input())
+h = list(map(int, input().split()))
+
+res = 0
+cnt = 0
+
+for i in range(n-1):
+    if h[i] < h[i+1]:
+        cnt = 0
+    else:
+        cnt += 1
+        res = max(res, cnt)
+print(res)
