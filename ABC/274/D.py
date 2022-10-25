@@ -17,6 +17,5 @@ for i in range(1, n):
             t.add(cx+a[i])
             t.add(cx-a[i])
             sx = t
-        
 
 print("Yes" if x in sx and y in sy else "No")
