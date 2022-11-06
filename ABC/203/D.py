@@ -2,7 +2,7 @@ n, k = map(int, input().split())
 a = [list(map(int, input().split())) for _ in range(n)]
 
 x = k*k//2 + 1
-l, r = -1, 801
+l, r = -1, 10**10
 
 while l + 1 < r:
     m = (l + r) // 2

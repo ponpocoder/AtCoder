@@ -29,5 +29,5 @@ int main() {
   int sr = -1;
   int sc = -1;
   rep(i, h)rep(j, w) if (g[i][j] == 'S') {sr = i; sc = j;}
-  cout << (dfs(sr, sc, 0) ? "Yes" : "No") << endl;
+  cout << (dfs(sr, sc, 1) ? "Yes" : "No") << endl;
 }
