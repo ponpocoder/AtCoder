@@ -26,14 +26,14 @@ int main() {
     int l = -1;
     int r = n*n;
 
-    while (l <= r) {
+    while (l +1 < r) {
       int m = (l+r) / 2;
       ll curr = p[i] + q[m];
       if (curr == k) {
         cout << "Yes" << endl;
         return 0;
-      } else if (curr < k) l = m + 1;
-      else r = m - 1;
+      } else if (curr < k) l = m;
+      else r = m;
     }
   }
   cout << "No" << endl;
