@@ -12,7 +12,8 @@ int main() {
   vector<int> a(n-1), b(n-1);
   rep(i, n-1) cin >> a[i];
   rep(i, n-1) cin >> b[i];
-  vector<ll> dp(n);
+  vector<int> dp(n, -1001001001);
+  dp[0] = 0;
   rep(i, n-1) {
     int x = a[i]-1;
     int y = b[i]-1;
