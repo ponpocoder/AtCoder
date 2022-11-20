@@ -16,7 +16,7 @@ int main() {
   cin >> n;
   vector dp(n+1, vector<vector<vector<int>>>(4, vector<vector<int>>(4, vector<int>(4))));
   // dp[i][j][k][l]: i番目の数字を見て最後1,2,3文字目がそれぞれj,k,lである時の場合の数
-  dp[0][0][0][0] = 1;
+  dp[0][3][3][3] = 1;
   rep(i, n) {
     rep(j, 4) {
       rep(k, 4) {
