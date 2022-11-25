@@ -13,5 +13,8 @@ template <class T> bool chmin(T& a, T& b) { return a > b ? a = b, true: false; }
 template <class T> bool chmax(T& a, T& b) { return a < b ? a = b, true: false; }
 
 int main() {
-  
+  int a, b, c;
+  cin >> a >> b >> c;
+  int res = min(c, b/a);
+  cout << res << endl;
 }
