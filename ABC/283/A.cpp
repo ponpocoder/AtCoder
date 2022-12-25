@@ -19,5 +19,9 @@ template <class T> bool chmin(T& a, T& b) { return a > b ? a = b, true: false; }
 template <class T> bool chmax(T& a, T& b) { return a < b ? a = b, true: false; }
 
 int main() {
-
+  int a, b;
+  cin >> a >> b;
+  int res = 1;
+  rep(i, b) res *= a;
+  cout << res << endl;
 }
