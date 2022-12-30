@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 k = int(input())
-l, r = 0, 10**12
+l, r = 0, 10**13
 mp = defaultdict(int)
 
 curr = k
