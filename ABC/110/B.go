@@ -13,11 +13,11 @@ func main() {
 	ay := make([]int, m)
 	var mx = float64(y)
 	var mn = float64(x)
-	for i:=0; i < n; i++ {
+	for i := 0; i < n; i++ {
 		fmt.Scan(&ax[i])
 		mn = math.Max(mn, float64(ax[i]))
 	}
-	for i:=0; i < m; i++ {
+	for i := 0; i < m; i++ {
 		fmt.Scan(&ay[i])
 		mx = math.Min(mx, float64(ay[i]))
 	}
